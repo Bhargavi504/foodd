@@ -1,0 +1,67 @@
+<html>
+           	<head>
+                          	<title> Sample </title>
+                          	<style>
+                                         	
+                                         	body {font-family: Verdana, sans-serif;
+											       background-color: "#00002e";
+												   }
+                                         	button
+                                         	{
+                                                        	border-width: 1px;
+                                                        	border-style: solid;
+                                                        	border-color: pink;
+                                                        	border-radius: 5px;
+                                                        	background-color: white;
+                                                        	font-size: 40px;
+ 
+                                         	}
+                                         	button:hover
+                                         	{
+                                                        	background-color: black;
+                                                        	color: white;
+                                         	}
+                                         	
+ 
+                          	</style>
+ 
+           	</head>
+           	<body>
+                          	<center>
+							<h1> MENU </h2>
+                          	<img id="img1" src = menu.jpeg width = "100%" />
+                          	
+                          	<div style = "padding: 20px;">
+ 
+                                         	<button onclick = "next()"> Next </button>
+ 
+                                         	<button onclick = "prev()"> Prev </button>
+ 
+                          	</div>
+ 
+                          	</center>
+ 
+                          	<script type="text/javascript">
+                                         	const arr = ["menu.jpeg","menu1.jpeg","menu2.jpeg"];
+ 
+                                         	index = 0;
+                                         	function next()
+                                         	{
+                                                        	index = index + 1;
+                                                        	var img = document.getElementById("img1");
+                                                        	img.src = arr[index];
+															
+                                         	}
+                                         	function prev()
+                                         	{
+                                                        	index = index - 1;
+                                                        	var img = document.getElementById("img1");
+                                                        	img.src = arr[index];
+															
+                                         	}
+                          	</script>
+ 
+           	</div>
+ 
+           	</body>
+</html>
